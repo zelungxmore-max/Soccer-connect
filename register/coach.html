@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Register as Coach – SoccerConnect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/main.css">
+  <style>
+    form{max-width:700px;margin:3rem auto;background:var(--light);padding:2rem;border-radius:var(--radius)}
+    .file-input{margin-top:.3rem}
+    .social-group{display:grid;gap:.5rem;margin-top:.5rem}
+    .back-link{display:inline-block;margin-bottom:1.5rem;color:var(--primary)}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="container flex-between">
+    <a href="../index.html" class="logo">
+      <img src="../assets/logo-placeholder.png" alt="logo">
+      <span>SoccerConnect</span>
+    </a>
+  </div>
+</header>
+
+<main class="container">
+  <a href="../index.html" class="back-link">← Back to Home</a>
+
+  <h1>Academy Registration</h1>
+  <form id="academyForm" enctype="multipart/form-data">
+    <label>Name of Coach *
+      <input type="text" name="name" required>
+    </label>
+
+    <label>Team Division *
+      <input type="text" name="division" placeholder="e.g. U-18 Elite" required>
+    </label>
+
+    <label>Country *
+      <input type="text" name="country" required>
+    </label>
+
+    <label>Full Address *
+      <textarea name="address" rows="2" required></textarea>
+    </label>
+
+    <label>Contact Number *
+      <input type="tel" name="contact" required>
+    </label>
+
+    <label>Email Address *
+      <input type="email" name="email" required>
+    </label>
+
+    <label>Profile / Description *
+      <textarea name="profile" rows="4" placeholder="Write about your academy…" required></textarea>
+    </label>
+
+    <label>Registration Certificate (PDF/JPG/PNG) *
+      <input type="file" name="certificate" accept=".pdf,.jpg,.jpeg,.png" class="file-input" required>
+    </label>
+
+    <label>Website Link
+      <input type="url" name="website" placeholder="https://…">
+    </label>
+
+    <fieldset>
+      <legend>Social Media Links (optional)</legend>
+      <div class="social-group">
+        <input type="url" name="facebook" placeholder="Facebook page URL">
+        <input type="url" name="instagram" placeholder="Instagram URL">
+        <input type="url" name="twitter" placeholder="Twitter URL">
+        <input type="url" name="tiktok" placeholder="TikTok URL">
+      </div>
+    </fieldset>
+
+    <button type="submit" class="btn filled">Submit for Verification</button>
+  </form>
+</main>
+
+<script>
+document.getElementById('academyForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  // TODO: ajax or fetch to your backend
+  alert('Form submitted (demo). In production upload files & data to your API.');
+});
+</script>
+</body>
+</html>
