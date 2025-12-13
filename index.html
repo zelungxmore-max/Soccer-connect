@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SoccerConnect – Market-Ready Talent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container flex-between">
+      <a href="index.html" class="logo">
+        <img src="assets/logo-placeholder.png" alt="SoccerConnect logo">
+        <span>SoccerConnect</span>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#find">Find</a>
+        <a href="#gallery">Gallery</a>
+      </nav>
+
+      <div class="auth-buttons">
+        <button id="loginBtn" class="btn ghost">Log In</button>
+        <div class="dropdown">
+          <button id="regBtn" class="btn filled">Register &#9662;</button>
+          <ul class="dropdown-menu">
+            <li><a href="register/academy.html">As an Academy</a></li>
+            <li><a href="register/agent.html">As an Agent</a></li>
+            <li><a href="register/coach.html">As a Coach</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <button id="mobMenuToggle" class="hamburger">&#9776;</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Connect Market-Ready Players With Decision Makers</h1>
+        <p>Academies, licensed agents and coaches advertise talent. Verified clubs discover & negotiate—seamlessly.</p>
+        <a href="#find" class="btn large">Explore Players</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container section">
+      <h2>Why SoccerConnect?</h2>
+      <div class="three-cards">
+        <article>
+          <h3>For Academies</h3>
+          <p>Showcase your graduating squad, link video, stats & certificates. Reach agents and first teams worldwide.</p>
+        </article>
+        <article>
+          <h3>For Agents</h3>
+          <p>List your represented players, attach FIFA license & past deals. Clubs trust verified intermediaries.</p>
+        </article>
+        <article>
+          <h3>For Coaches</h3>
+          <p>Promote players you trained, add performance data and recommendation letters. Get scouts’ attention faster.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY (placeholder) -->
+    <section id="gallery" class="section bg-light">
+      <div class="container">
+        <h2>Gallery</h2>
+        <p>Action shots, signing ceremonies & success stories will appear here once you upload them.</p>
+        <div class="gallery-grid">
+          <div class="img-placeholder"></div>
+          <div class="img-placeholder"></div>
+          <div class="img-placeholder"></div>
+          <div class="img-placeholder"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container section">
+      <h2>Contact Us</h2>
+      <form id="contactForm" class="single-col-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="msg" rows="5" placeholder="Message" required></textarea>
+        <button type="submit" class="btn filled">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>&copy; <span id="yr"></span> SoccerConnect. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
