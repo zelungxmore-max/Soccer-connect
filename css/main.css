@@ -102,3 +102,5 @@ input:focus,textarea:focus{outline:none;border-color:var(--primary)}
 .desktop-nav a:hover{color:#d1f2d1}   /* optional pale-green hover */
 /* LOGO SIZE */
 .logo img{height:40px;width:auto}
+/* logo text white */
+.logo span{color:#fff}
