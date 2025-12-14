@@ -11,3 +11,13 @@ document.getElementById('contactForm')?.addEventListener('submit',e=>{
   e.preventDefault();
   alert('Thank you! This is a demo. Connect your backend or Formspree etc.');
 });
+});
+
+/* hero banner slideshow */
+const slides = document.querySelectorAll('.slide');
+let cur = 0;
+setInterval(() => {
+  slides[cur].classList.remove('active');
+  cur = (cur + 1) % slides.length;
+  slides[cur].classList.add('active');
+}, 5000);
