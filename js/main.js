@@ -11,7 +11,6 @@ document.getElementById('contactForm')?.addEventListener('submit',e=>{
   e.preventDefault();
   alert('Thank you! This is a demo. Connect your backend or Formspree etc.');
 });
-});
 
 /* hero banner slideshow */
 const slides = document.querySelectorAll('.slide');
