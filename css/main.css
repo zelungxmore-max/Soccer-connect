@@ -42,6 +42,8 @@ button,input,textarea{font:inherit}
 .desktop-nav a:hover::after{content:'';position:absolute;bottom:-4px;left:0;width:100%;height:2px;background:var(--primary)}
 .auth-buttons{display:flex;align-items:center;gap:.5rem}
 .hamburger{display:none;font-size:1.8rem;background:none;border:none}
+.desktop-nav a{color:#1a3a1a}
+.desktop-nav a:hover{color:#0052cc}
 
 /* DROPDOWN */
 .dropdown{position:relative}
