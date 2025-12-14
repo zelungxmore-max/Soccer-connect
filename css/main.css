@@ -95,3 +95,8 @@ input:focus,textarea:focus{outline:none;border-color:var(--primary)}
        }
 /* TOP-BAR COLOR */
 .topbar{background:#1a661a;border-bottom:1px solid #144d14}
+
+/* TOP-BAR COLOR */
+.topbar{background:#1a661a;border-bottom:1px solid #144d14}
+.desktop-nav a{color:#fff}
+.desktop-nav a:hover{color:#d1f2d1}   /* optional pale-green hover */
